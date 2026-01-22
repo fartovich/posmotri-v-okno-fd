@@ -105,6 +105,7 @@ ol {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  padding: 0px 3px 0px 2px;
 }
 
 .content__video-card {
@@ -201,13 +202,14 @@ ol {
   appearance: none;
   font-size: 18px;
   outline: none;
+  font-family: "Fira Sans Condensed", sans-serif;
+  width: 225px;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
 }
 
-/*вернуться к этому потом */
 .search-form__fieldset:has(:focus-visible) {
   outline: 1px solid #fff;
 }
@@ -238,4 +240,36 @@ ol {
 
 .search-form__pseudo-checkbox:has(:focus-visible) {
   outline: 1px solid #fff;
+}
+
+.button {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 18px;
+  background: none;
+  padding: 6px 0px 6px 0px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+  text-decoration: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  align-self: flex-end;
+}
+
+.more-button {
+  width: 100%;
+  height: 34px;
 }
