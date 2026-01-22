@@ -124,9 +124,11 @@ ol {
   flex-grow: 1;
 }
 
+/*Изменение шрифта сдвигает высоту левого блока*/
 .search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .content__accent {
@@ -156,4 +158,84 @@ ol {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  column-gap: 5px;
+}
+
+.search-form__textfield {
+  margin: 0;
+  padding: 2.5px 0px 2.5px 0px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #fff;
+  background: none;
+  color: #fff;
+  appearance: none;
+  font-size: 18px;
+  outline: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
+/*вернуться к этому потом */
+.search-form__fieldset:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.search-form__checkbox:checked {
+  opacity: 1;
+}
+
+.search-form__pseudo-checkbox:hover + .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__pseudo-checkbox:has(:focus-visible) {
+  outline: 1px solid #fff;
 }
