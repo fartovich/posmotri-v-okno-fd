@@ -69,6 +69,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow: auto;
   display: flex;
@@ -90,6 +91,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   min-width: 711px;
   min-height: 386px;
   margin-bottom: 16px;
