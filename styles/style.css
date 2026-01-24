@@ -246,21 +246,21 @@ ol {
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 196px;
+  line-height: 100%;
 }
 
 .content__video-card-description {
   line-height: 16.2px;
   max-width: 196px;
-  max-height: 62px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin-top: 6px;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  max-width: 194px;
   object-fit: cover;
   object-position: center;
 }
@@ -272,6 +272,8 @@ ol {
   background: none;
   padding: 6px 0px 6px 0px;
   height: 34px;
+  font-weight: 700;
+  font-family: inherit;
 }
 
 .button:hover {
