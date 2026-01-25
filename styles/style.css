@@ -63,8 +63,6 @@ ol {
 
 .result__video-container {
   position: relative;
-  min-width: 711px;
-  min-height: 386px;
   margin-bottom: 16px;
 }
 
@@ -170,7 +168,7 @@ ol {
 }
 
 .title {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   font-family: "Oswald", sans-serif;
   font-size: 75px;
   text-transform: uppercase;
@@ -193,7 +191,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 26px;
   padding-top: 2px;
 }
 
